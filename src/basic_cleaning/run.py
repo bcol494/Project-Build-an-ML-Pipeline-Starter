@@ -36,6 +36,9 @@ def go(args):
     # Add longitude and latitude filter to allow test_proper_boundaries to pass
     # ENTER CODE HERE
 
+    #idx = df["longitude"].between(-74.25, -73.50) & df["latitude"].between(40.5, 41.2)
+    #df = df[idx].copy()
+
     # Save the cleaned data
     df.to_csv('clean_sample.csv',index=False)
 
@@ -57,43 +60,43 @@ if __name__ == "__main__":
   
     parser.add_argument(
         "--input_artifact", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        type = str ## INSERT TYPE HERE: str, float or int,
+        help ="Name of the input artifact ## INSERT DESCRIPTION HERE,
         required = True
     )
 
     parser.add_argument(
         "--output_artifact", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        type = str ## INSERT TYPE HERE: str, float or int,
+        help = "Name of the output artifact" ## INSERT DESCRIPTION HERE,
         required = True
     )
 
     parser.add_argument(
         "--output_type", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        type = str ## INSERT TYPE HERE: str, float or int,
+        help ="Type for the output artifact" ## INSERT DESCRIPTION HERE,
         required = True
     )
 
     parser.add_argument(
         "--output_description", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        type = str ## INSERT TYPE HERE: str, float or int,
+        help ="Description for the output artifact" ## INSERT DESCRIPTION HERE,
         required = True
     )
 
     parser.add_argument(
         "--min_price", 
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        type = float ## INSERT TYPE HERE: str, float or int,
+        help = "Minimum price to consider" ## INSERT DESCRIPTION HERE,
         required = True
     )
 
     parser.add_argument(
         "--max_price",
-        type = ## INSERT TYPE HERE: str, float or int,
-        help = ## INSERT DESCRIPTION HERE,
+        type = float ## INSERT TYPE HERE: str, float or int,
+        help ="Maximum price to consider" ## INSERT DESCRIPTION HERE,
         required = True
     )
 
