@@ -1,3 +1,8 @@
+## Project Submission Links
+
+- **GitHub Repository:** [Project-Build-an-ML-Pipeline-Starter](https://github.com/bcol494/Project-Build-an-ML-Pipeline-Starter)
+- **Weights & Biases Project:** [nyc_airbnb W&B Workspace](https://wandb.ai/bcol494-western-governors-university/nyc_airbnb?nw=nwuserbcol494)
+
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
 You are working for a property management company renting rooms and properties for short periods of 
 time on various rental platforms. You need to estimate the typical price for a given property based 
